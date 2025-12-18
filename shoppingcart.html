@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Bookdiverse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/shoppingcart.css">
+</head>
+<body style="margin:0; padding:0; overflow-x:hidden;">
+  <!-- Navbar (Reused exactly as provided) -->
+  <nav class="position-absolute top-0 start-0 w-100 z-3 d-flex justify-content-between align-items-center px-5 py-3 text-dark">
+        <div class="nav-left d-flex align-items-center gap-5">
+            <img class="bkimg" src="assets/images/Shared/Frame35172.png" alt="bookdiverse">
+            <img class="searchimg" src="assets/images/homepagepic/Frame36013.png" alt="search bar">
+        </div>
+        <div class="nav-right d-flex ">
+            <div class="nav-text d-flex ">
+                <p>Home</p>
+                <p>Bookstore</p>
+                <p>Help</p>
+            </div>
+            <img src="assets/images/Shared/Vector.png" alt="love-image">
+            <img src="assets/images/Shared/vector1.png" alt="shopping-cart">
+            <img src="assets/images/Shared/vector2.png" alt="account">
+        </div>
+    </nav>
+
+  <!-- Shopping Cart Content - Scoped wrapper -->
+  <div class="shopping-cart-page">
+  <div class="cart-container">
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb-nav">
+      <span class="breadcrumb-active">Shopping Cart</span>
+      <span class="breadcrumb-arrow">›</span>
+      <span class="breadcrumb-inactive">Checkout Details</span>
+      <span class="breadcrumb-arrow">›</span>
+      <span class="breadcrumb-inactive">Order Complete</span>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart-items">
+      <!-- Item 1 -->
+      <div class="cart-item">
+        <div class="item-details">
+          <img src="assets/images/homepagepic/30rachel-khong-cover-jumbo1.png" alt="Real Americans" class="item-image">
+          <div class="item-info">
+            <h3 class="item-title">Real Americans <span class="item-format">(Hardcover)</span></h3>
+            <p class="item-author">By Rachel Khong</p>
+            <p class="item-genre">Genre: Fiction</p>
+            <div class="item-actions">
+              <span class="item-qty">Qty: 1</span>
+              <button class="btn-delete">Delete</button>
+              <button class="btn-save">Save for later</button>
+            </div>
+          </div>
+        </div>
+        <div class="item-pricing">
+          <div class="pricing-row">
+            <span class="pricing-label">Price:</span>
+            <span class="pricing-value">NGN10, 183</span>
+          </div>
+          <div class="pricing-row">
+            <span class="pricing-label">Delivery fee:</span>
+            <span class="pricing-value">NGN4 000</span>
+          </div>
+          <div class="pricing-row subtotal-row">
+            <span class="pricing-label">Subtotal:</span>
+            <span class="pricing-value">NGN14, 183</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="cart-item">
+        <div class="item-details">
+          <img src="assets/images/homepagepic/atomichabits1.png" alt="Atomic habits" class="item-image">
+          <div class="item-info">
+            <h3 class="item-title">Atomic habits <span class="item-format">(Paperback)</span></h3>
+            <p class="item-author">By James Clear</p>
+            <p class="item-genre">Genre: Fiction</p>
+            <div class="item-actions">
+              <span class="item-qty">Qty: 1</span>
+              <button class="btn-delete">Delete</button>
+              <button class="btn-save">Save for later</button>
+            </div>
+          </div>
+        </div>
+        <div class="item-pricing">
+          <div class="pricing-row">
+            <span class="pricing-label">Price:</span>
+            <span class="pricing-value">NGN3, 700</span>
+          </div>
+          <div class="pricing-row">
+            <span class="pricing-label">Delivery fee:</span>
+            <span class="pricing-value">NGN4, 000</span>
+          </div>
+          <div class="pricing-row subtotal-row">
+            <span class="pricing-label">Subtotal:</span>
+            <span class="pricing-value">NGN7, 700</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Total and Buttons -->
+    <div class="cart-footer">
+      <div class="cart-left-section">
+        <span class="total-label">Total (2 Items):</span>
+        <button class="btn-continue-shopping">Continue Shopping</button>
+      </div>
+      <div class="cart-right-section">
+        <span class="total-amount">NGN21, 883</span>
+        <button class="btn-checkout">Proceed To Checkout</button>
+      </div>
+    </div>
+
+    <!-- Recommendations Section -->
+    <div class="recommendations-section">
+      <h2 class="recommendations-title">Customers who bought this item also bought</h2>
+      <div class="recommendations-grid">
+        <div class="recommendation-item">
+          <img src="assets/images/bkdescription/richdad.png" alt="Rich Dad, Poor Dad" class="recommendation-image">
+          <p class="recommendation-title">Rich Dad, Poor Dad</p>
+        </div>
+        <div class="recommendation-item">
+          <img src="assets/images/bkdescription/powerhabit.png" alt="The Power Of Habit" class="recommendation-image">
+          <p class="recommendation-title">The Power Of Habit</p>
+        </div>
+        <div class="recommendation-item">
+          <img src="assets/images/bkdescription/larry.png" alt="How to Talk To Anyone, Anytime, Anywhere" class="recommendation-image">
+          <p class="recommendation-title">How to Talk To Anyone, Anytime, Anywhere</p>
+        </div>
+        <div class="recommendation-item">
+          <img src="assets/images/bkdescription/club.png" alt="The 5 AM Club" class="recommendation-image">
+          <p class="recommendation-title">The 5 AM Club</p>
+        </div>
+        <div class="recommendation-item">
+          <img src="assets/images/bkdescription/love.png" alt="How To End A Love Story" class="recommendation-image">
+          <p class="recommendation-title">How To End A Love Story</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- End Shopping Cart Page Scoped Wrapper -->
+
+  <!-- Footer (Reused exactly as provided) -->
+  <div class="footer img-fluid w-100">
+    <div>
+      <img class="footer1 img-fluid w-100" src="assets/images/homepagepic/Rectangle80.png" alt="image color pink">
+      <img class="footer2" src="assets/images/homepagepic/Frame35181.png" alt="Bookdiverse image">
+    </div>
+    <div class="footer-text d-flex flex-column flex-md-row text-center text-md-start">
+      <div class="text1">
+        <h3>Library</h3>
+        <p>Genres</p>
+        <p>Languages</p>
+        <p>Authors</p>
+      </div>
+      <div class="text2">
+        <h3>Company</h3>
+        <p>About us</p>
+        <p>Help</p>
+        <p>Become A Partner</p>
+      </div>
+      <div class="text3 text-center">
+        <h3>Get the app</h3>
+        <div class="text-img d-flex justify-content-center align-items-center gap-4">
+          <img src="assets/images/homepagepic/google-play1.png" alt="google-play1">
+          <img src="assets/images/homepagepic/app-store1.png" alt="app-store1">
+        </div>
+      </div>
+    </div>
+    <hr class="border border-1 border-light opacity-100 my-4">
+    <div class="footerb d-flex flex-column flex-md-row text-center text-md-start">
+      <div class="footerb1 d-flex align-items-end gap-2">
+        <div>
+          <h3>Contact us:</h3>  
+        </div>
+        <img src="assets/images/homepagepic/logos_facebook.png" alt="facebook logo">
+        <img src="assets/images/homepagepic/Group.png" alt="instagram logo">
+        <img src="assets/images/homepagepic/Group(1).png" alt="twitter logo">
+        <img src="assets/images/homepagepic/Vector.png" alt="tikitok logo">
+      </div>
+        <h3>Terms and Privacy</h3>
+        <h3>Delivery & Returns</h3>
+    </div>
+    <hr class="border border-1 border-light opacity-100 my-4">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

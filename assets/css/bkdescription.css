@@ -1,0 +1,176 @@
+.hero1-img {
+  max-width: 100%;
+  height: auto;
+}
+/* Responsive tweaks for bkdescription page */
+.hero1-img{ max-width:260px; }
+.hero1-text p{ line-height:1.5; }
+
+/* Continue button border color — line 67 requested color */
+.btn-continue{ border-color: #ff4da6 !important; }
+
+@media (max-width: 767.98px){
+  .hero1{ padding: 1rem; margin: 0.25rem; }
+  .hero1-img{ max-width:200px; }
+  .buttons{ padding-left: 0.75rem; padding-right: 0.75rem; }
+}
+
+/* Button hover color and sizing */
+.buttons .btn{ transition: all 0.15s ease-in-out; }
+.buttons .btn:hover{ color: #fff; border-color: #ff4da6 !important; background-color: #ff4da6 !important; }
+.btn-continue{ border-color: #ff4da6 !important; font-size: 1.05rem; padding-left: 1.25rem; padding-right: 1.25rem; }
+.btn-continue:hover{ transform: translateY(-2px); }
+
+/* Related books styling */
+.related-img{ max-width:140px; height:auto; display:block; margin:0 auto; }
+.related-caption{ font-size:0.95rem; color:#222; }
+
+/* Make continue button larger and keep spacing consistent */
+.btn-continue{ font-size:1.15rem; padding-left:1.5rem; padding-right:1.5rem; padding-top:0.6rem; padding-bottom:0.6rem; }
+
+@media (max-width:767.98px){
+  .related-img{ max-width:120px; }
+  .btn-continue{ font-size:1.05rem; padding-left:1.15rem; padding-right:1.15rem; }
+}
+
+/* Shopping cart responsive tweaks */
+.cart-item{ display:flex; flex-direction:row; align-items:center; }
+.cart-item img{ max-width:100%; height:auto; }
+.cart-price{ text-align:right; }
+
+@media (max-width: 991.98px){
+  .cart-item{ flex-direction:row; }
+}
+
+@media (max-width: 767.98px){
+  .cart-item{ flex-direction:column; align-items:flex-start; gap:0.5rem; }
+  .cart-item .flex-shrink-0{ width:80px !important; }
+  .cart-price{ text-align:left; width:100%; margin-top:0.5rem; }
+  .cart-qty{ width:100% !important; max-width:200px; }
+  .continue-btn, .proceed-btn{ width:100%; }
+  .d-flex.justify-content-between.flex-column.flex-md-row{ align-items:flex-start; }
+  .total-line{ margin-top:0.5rem; }
+}
+
+/* Small adjustments for large desktops */
+@media (min-width: 1200px){
+  .cart-item{ gap:1rem; }
+}
+
+/* Shopping cart summary & actions alignment */
+.cart-summary{ width:100%; }
+.cart-summary .actions{ display:flex; gap:0.75rem; }
+/* push actions to the right on md+ screens */
+@media (min-width: 768px){
+  .cart-summary .actions{ margin-left:auto; align-items:center; }
+  .cart-summary .total-block{ display:flex; flex-direction:column; justify-content:center; }
+}
+@media (max-width: 767.98px){
+  .cart-summary{ align-items:flex-start; }
+  .cart-summary .actions{ width:100%; }
+  .cart-summary .actions .btn{ width:100%; }
+  .cart-summary .total-block{ text-align:left; }
+}
+
+/* New cart layout: total + actions on small screens stacked, on sm+ side by side */
+.total-block{ text-align:left; }
+.actions .btn{ width:100%; }
+@media (min-width: 576px){
+  .actions{ text-align:right; }
+  .actions .btn{ width:auto; }
+  .actions .d-flex{ flex-direction:row; gap:0.5rem; }
+}
+
+/* Related items: center and fix item width so images align */
+.related-row > .text-center{ width:110px; }
+.related-row img{ display:block; margin:0 auto; max-width:100%; height:auto; }
+
+/* Cart item visual tweaks to match screenshot */
+.cart-item{ border-radius:6px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.04); }
+.cart-item .flex-shrink-0 img{ width:96px; height:auto; object-fit:cover; }
+
+/* Summary left/right behaviour */
+.cart-summary-row{ margin-top:1rem; }
+.summary-left{ padding-left:0.25rem; }
+.summary-right{ padding-right:0.25rem; }
+.summary-right .total-line{ font-size:1.25rem; }
+
+@media (min-width:768px){
+  .summary-left{ align-items:flex-start; }
+  .summary-right{ align-items:flex-end; }
+}
+
+/* Related section: ensure images are evenly spaced */
+.related-section .related-row .col-6{ display:flex; flex-direction:column; align-items:center; }
+.related-section .related-row img{ max-width:110px; }
+
+/* Cart item three-column layout on md+ */
+@media (min-width: 768px){
+  .cart-item{ display:grid; grid-template-columns: 96px 1fr 220px; gap:1rem; align-items:start; padding:1rem; }
+  .cart-thumb img{ width:96px; height:auto; display:block; }
+  .cart-details{ padding-top:4px; }
+  .cart-price-block{ padding-left:8px; }
+  .price-row{ display:flex; justify-content:space-between; gap:1rem; }
+  .price-label{ color:#111; }
+  .price-amount{ font-weight:600; }
+  .price-divider{ border:0; border-top:1px solid #e6e6e6; }
+}
+
+/* Mobile: stack cart items */
+@media (max-width: 767.98px){
+  .cart-item{ display:flex; flex-direction:row; gap:1rem; padding:0.75rem; }
+  .cart-price-block{ min-width:120px; text-align:right; }
+  .price-row{ display:flex; justify-content:space-between; }
+}
+
+
+/* Final button & alignment adjustments to match screenshot */
+.summary-left{ text-align:left; }
+.summary-right{ text-align:right; }
+
+.continue-btn{
+  background:#fff !important;
+  color:#111 !important;
+  border:2px solid #ff4da6 !important;
+  border-radius:12px !important;
+  padding:0.6rem 1.5rem !important;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+}
+.continue-btn:hover{ background:#ff4da6 !important; color:#fff !important; }
+
+.proceed-btn{
+  background:#ff4da6 !important;
+  color:#fff !important;
+  border:2px solid #ff4da6 !important;
+  border-radius:12px !important;
+  padding:0.6rem 1.8rem !important;
+  box-shadow: 0 6px 18px rgba(255,77,166,0.14);
+}
+.proceed-btn:active{ transform: translateY(1px); }
+
+@media (min-width: 768px){
+  .summary-left .continue-btn{ width:220px; }
+  .summary-right .proceed-btn{ width:220px; }
+}
+
+/* Related section: ensure heading and images centered and spaced evenly */
+.related-section h5{ text-align:center; }
+.related-section .related-row{ display:flex; justify-content:center; align-items:flex-start; }
+.related-section .related-row > div{ display:flex; flex-direction:column; align-items:center; }
+
+
+
+
+
+/*.hero1-text h5 {
+  flex-wrap: nowrap;
+  font-size: clamp(12px, 1.5vw, 16px);  scales automatically with screen width 
+}*/
+
+.span1 {
+  color: #3771c8;
+ /* white-space: nowrap;
+  margin-left: 1rem;  replace big margin with responsive gap */
+}
+
+

@@ -1,0 +1,93 @@
+.nav-right img{
+    width:20px;
+    height:100%;
+}
+.nav-right {
+    gap: 150px;
+    padding-right: 20px;
+    align-items: center;
+}
+.nav-text p{
+    gap: 100px;
+    align-items: center;
+    margin-bottom: 0;
+}
+.nav-text{
+    gap:60px;
+}
+
+/* Make nav wrap and behave on small screens */
+nav{
+    flex-wrap: wrap;
+}
+.nav-left, .nav-right{
+    display:flex;
+    align-items:center;
+}
+.nav-left{ gap:1rem; }
+
+
+
+@media (max-width: 992px) {
+    .nav-right {
+    gap: 60px;
+    }
+    .bkimg {
+    width: 70px; 
+    }
+    .searchimg {
+    width: 40px; 
+    }
+    .nav-right img {
+    width: 19px;
+    }
+    .nav-text{
+        gap:40px;
+    }
+    .nav-text p {
+    font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .nav-right {
+    gap: 45px;
+    }
+
+    .bkimg {
+    width: 70px; 
+    }
+    .searchimg {
+    width: 40px; 
+    }
+    .nav-right img {
+    width: 16px;
+    }
+    .nav-text{
+        gap:30px;
+    }
+    .nav-text p {
+    font-size: 13px;
+    margin-bottom: 0;
+    }
+}
+@media (max-width: 535px) {
+    .nav-right {
+    gap: 30px;
+    }
+    .nav-text {
+    gap: 20px;
+    }
+    .nav-text p {
+    font-size: 12px;
+    }
+}
+
+/* Extra small screens: hide text links and reduce paddings */
+@media (max-width: 420px) {
+    nav{ padding-left: 0.5rem; padding-right: 0.5rem; }
+    .nav-text{ display:none; }
+    .searchimg{ display:none; }
+    .bkimg{ width: 48px; }
+    .nav-right{ gap:10px; padding-right:8px; }
+    .nav-right img{ width:18px; }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Bookdiverse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
+</head>
+<body style="margin:0; padding:0; overflow-x:hidden;">
+  <!-- Navbar (Reused exactly as provided) -->
+   <nav class="position-absolute top-0 start-0 w-100 z-3 d-flex justify-content-between align-items-center px-5 py-3 text-dark">
+        <div class="nav-left d-flex align-items-center gap-5">
+            <img class="bkimg" src="assets/images/Shared/frame35172.png" alt="bookdiverse">
+            <img class="searchimg" src="assets/images/homepagepic/frame36013.png" alt="search bar">
+        </div>
+        <div class="nav-right d-flex ">
+            <div class="nav-text d-flex ">
+                <p>Home</p>
+                <p>Bookstore</p>
+                <p>Help</p>
+            </div>
+            <img src="assets/images/Shared/Vector.png" alt="love-image">
+            <img src="assets/images/Shared/vector1.png" alt="shopping-cart">
+            <img src="assets/images/Shared/vector2.png" alt="account">
+        </div>
+    </nav>
+
+  <!-- Checkout Content -->
+  <div class="checkout-container">
+    <!-- Progress Steps -->
+    <div class="progress-header">
+      <div class="step-container">
+        <div class="step completed">
+          <span class="step-number">1</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step active">
+          <span class="step-number">2</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+          <span class="step-number">3</span>
+        </div>
+      </div>
+      <div class="step-labels">
+        <span class="step-label">Shopping Cart</span>
+        <span class="step-label active">Checkout Details</span>
+        <span class="step-label">Order Complete</span>
+      </div>
+    </div>
+
+    <!-- Main Form Section -->
+    <div class="form-section">
+      <h2 class="form-title">Shipping Details</h2>
+      
+      <form class="checkout-form">
+        <div class="form-group">
+          <label for="fullName">Full Name*</label>
+          <input type="text" id="fullName" class="form-control" placeholder="Ado Williams" required>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country/Region*</label>
+          <select id="country" class="form-control" required>
+            <option value="">Nigeria</option>
+            <option value="ng">Nigeria</option>
+            <option value="gh">Ghana</option>
+            <option value="ke">Kenya</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address*</label>
+          <input type="text" id="address" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="state">State</label>
+          <select id="state" class="form-control">
+            <option value="">Select a State</option>
+            <option value="lagos">Lagos</option>
+            <option value="abuja">Abuja</option>
+            <option value="kano">Kano</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <select id="city" class="form-control">
+            <option value="">Select a City</option>
+            <option value="ikeja">Ikeja</option>
+            <option value="vi">Victoria Island</option>
+            <option value="lekki">Lekki</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" class="form-control" placeholder="08123456900">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="ado12@gmail.com">
+        </div>
+
+        <button type="submit" class="btn-next">Next</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer (Reused exactly as provided) -->
+  <div class="footer img-fluid w-100">
+    <div>
+      <img class="footer1 img-fluid w-100" src="assets/images/homepagepic/Rectangle80.png" alt="image color pink">
+      <img class="footer2" src="assets/images/homepagepic/Frame35181.png" alt="Bookdiverse image">
+    </div>
+    <div class="footer-text d-flex flex-column flex-md-row text-center text-md-start">
+      <div class="text1">
+        <h3>Library</h3>
+        <p>Genres</p>
+        <p>Languages</p>
+        <p>Authors</p>
+      </div>
+      <div class="text2">
+        <h3>Company</h3>
+        <p>About us</p>
+        <p>Help</p>
+        <p>Become A Partner</p>
+      </div>
+      <div class="text3 text-center">
+        <h3>Get the app</h3>
+        <div class="text-img d-flex justify-content-center align-items-center gap-4">
+          <img src="assets/images/homepagepic/google-play1.png" alt="google-play1">
+          <img src="assets/images/homepagepic/app-store1.png" alt="app-store1">
+        </div>
+      </div>
+    </div>
+    <hr class="border border-1 border-light opacity-100 my-4">
+    <div class="footerb d-flex flex-column flex-md-row text-center text-md-start">
+      <div class="footerb1 d-flex align-items-end gap-2">
+        <div>
+          <h3>Contact us:</h3>  
+        </div>
+        <img src="assets/images/homepagepic/logos_facebook.png" alt="facebook logo">
+        <img src="assets/images/homepagepic/Group.png" alt="instagram logo">
+        <img src="assets/images/homepagepic/Group(1).png" alt="twitter logo">
+        <img src="assets/images/homepagepic/Vector.png" alt="tikitok logo">
+      </div>
+        <h3>Terms and Privacy</h3>
+        <h3>Delivery & Returns</h3>
+    </div>
+    <hr class="border border-1 border-light opacity-100 my-4">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
