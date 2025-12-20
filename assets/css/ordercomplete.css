@@ -1,0 +1,412 @@
+/* Order Complete Page Styles */
+/* Navbar styles are NOT included here - they remain in nav.css */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
+}
+
+.order-complete-container {
+    padding-top: 120px;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb-nav {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+.breadcrumb-item {
+    color: #CCCCCC;
+}
+
+.breadcrumb-item.active {
+    color: #333333;
+    font-weight: 600;
+}
+
+.breadcrumb-arrow {
+    color: #CCCCCC;
+    margin: 0 10px;
+}
+
+/* Thank You Section */
+.thank-you-section {
+    margin-top: 30px;
+}
+
+.checkmark-circle {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #E8175D 0%, #F5A3C7 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.order-number {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.thank-you-text {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 2px;
+}
+
+/* Info Boxes */
+.info-box {
+    background-color: #ffffff;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.box-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.box-text {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.contact-details {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.contact-item {
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.contact-item strong {
+    font-weight: 600;
+    color: #000000;
+}
+
+/* Order Summary Box */
+.order-summary-box {
+    background-color: #FAFAFA;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.order-header {
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 16px;
+}
+
+.order-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.order-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8175D;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+/* Order Items */
+.order-items {
+    margin-top: 20px;
+}
+
+.order-item {
+    padding-bottom: 16px;
+}
+
+.item-image {
+    width: 80px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.item-type {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.item-author {
+    font-size: 13px;
+    color: #888888;
+    margin-bottom: 8px;
+}
+
+.item-quantity {
+    font-size: 14px;
+    color: #666666;
+}
+
+.item-price {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333333;
+}
+
+/* Price Summary */
+.price-summary {
+    margin-top: 20px;
+}
+
+.price-label,
+.price-value {
+    font-size: 15px;
+    color: #666666;
+}
+
+.price-value {
+    font-weight: 600;
+    color: #333333;
+}
+
+.total-label,
+.total-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+}
+
+/* Continue Shopping Button */
+.btn-continue-shopping {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #E8175D;
+    border-radius: 50px;
+    padding: 14px 60px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-continue-shopping:hover {
+    background-color: #E8175D;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .order-complete-container {
+        padding-top: 100px;
+    }
+    
+    .breadcrumb-nav {
+        font-size: 16px;
+    }
+    
+    .thank-you-text {
+        font-size: 24px;
+    }
+    
+    .order-summary-box {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .order-complete-container {
+        padding-top: 90px;
+    }
+    
+    .breadcrumb-nav {
+        font-size: 14px;
+    }
+    
+    .breadcrumb-arrow {
+        margin: 0 6px;
+    }
+    
+    .checkmark-circle {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .checkmark-circle svg {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .thank-you-text {
+        font-size: 22px;
+    }
+    
+    .info-box {
+        padding: 20px;
+    }
+    
+    .box-title {
+        font-size: 18px;
+    }
+    
+    .order-summary-box {
+        padding: 22px;
+    }
+    
+    .item-image {
+        width: 70px;
+        height: 95px;
+    }
+    
+    .btn-continue-shopping {
+        padding: 12px 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .order-complete-container {
+        padding-top: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .breadcrumb-nav {
+        font-size: 12px;
+    }
+    
+    .breadcrumb-arrow {
+        margin: 0 4px;
+    }
+    
+    .checkmark-circle {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .checkmark-circle svg {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .thank-you-text {
+        font-size: 20px;
+    }
+    
+    .order-number {
+        font-size: 12px;
+    }
+    
+    .info-box {
+        padding: 16px;
+    }
+    
+    .box-title {
+        font-size: 16px;
+    }
+    
+    .box-text,
+    .contact-item {
+        font-size: 13px;
+    }
+    
+    .order-summary-box {
+        padding: 18px;
+    }
+    
+    .order-title {
+        font-size: 18px;
+    }
+    
+    .item-image {
+        width: 60px;
+        height: 85px;
+    }
+    
+    .item-title {
+        font-size: 14px;
+    }
+    
+    .item-author {
+        font-size: 12px;
+    }
+    
+    .item-quantity,
+    .item-price {
+        font-size: 13px;
+    }
+    
+    .price-label,
+    .price-value {
+        font-size: 14px;
+    }
+    
+    .total-label,
+    .total-value {
+        font-size: 16px;
+    }
+    
+    .btn-continue-shopping {
+        padding: 10px 40px;
+        font-size: 15px;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .order-complete-container {
+        padding-top: 70px;
+    }
+    
+    .breadcrumb-nav {
+        font-size: 11px;
+    }
+    
+    .thank-you-section .d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+        text-align: left;
+    }
+    
+    .checkmark-circle {
+        margin-bottom: 10px;
+    }
+}

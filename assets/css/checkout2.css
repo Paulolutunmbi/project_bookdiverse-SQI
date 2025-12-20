@@ -30,7 +30,7 @@ body {
 /* Main wrapper for entire checkout2 page content */
 .checkout2-page-wrapper {
     min-height: 100vh;
-    padding-top: 100px; /* Space for absolute positioned navbar */
+    padding-top: 120px; /* Space for absolute positioned navbar */
     padding-bottom: 40px;
     background-color: #ffffff;
 }
@@ -122,10 +122,16 @@ body {
 
 /* ===================================================================
    3. MAIN CONTENT LAYOUT
+   =================================================================== 
+   The main content section stretches across the screen with consistent
+   spacing on both sides via Bootstrap container and padding utilities.
+   This creates a full-width appearance while maintaining visual balance.
    =================================================================== */
 
 .checkout2-main-section {
-    padding: 20px 15px 60px;
+    padding: 40px 0 80px;
+    background-color: #ffffff;
+    min-height: 60vh; /* Ensures adequate vertical space */
 }
 
 /* ===================================================================
@@ -134,28 +140,35 @@ body {
 
 /* Billing Details Header */
 .checkout2-billing-header {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
 }
 
 .checkout2-main-heading {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
     color: #1f2937;
-    margin: 0;
+    margin: 0 0 8px 0;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #ec5569; /* Pink accent underline */
+    display: inline-block; /* Makes border only as wide as text */
 }
 
 /* Your Order Section Container */
 .checkout2-order-section {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 24px;
-    margin-bottom: 32px;
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .checkout2-section-title {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 700;
     color: #1f2937;
     margin: 0 0 20px 0;
 }
@@ -165,9 +178,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #e5e7eb;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #1f2937;
+    margin-bottom: 20px;
 }
 
 .checkout2-header-label {
@@ -188,8 +201,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 16px 0;
-    border-bottom: 1px solid #f3f4f6;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .checkout2-product-item:last-child {
@@ -237,18 +250,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
-    border-top: 2px solid #e5e7eb;
+    padding-top: 24px;
+    margin-top: 8px;
+    border-top: 2px solid #1f2937;
 }
 
 .checkout2-total-label {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: #1f2937;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .checkout2-total-amount {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     color: #1f2937;
 }
@@ -258,14 +274,23 @@ body {
    =================================================================== */
 
 .checkout2-payment-section {
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
 }
 
 .checkout2-payment-title {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 700;
     color: #1f2937;
     margin: 0 0 20px 0;
+    text-align: center; /* Center the title */
 }
 
 /* Payment Brand Icons Row */
@@ -273,6 +298,7 @@ body {
     display: flex;
     gap: 16px;
     align-items: center;
+    justify-content: center; /* Center the payment icons */
     margin-bottom: 24px;
 }
 
@@ -282,12 +308,19 @@ body {
     object-fit: contain;
 }
 
+/* Payment Form Wrapper - Constrains form width on large screens */
+.checkout2-payment-form-wrapper {
+    max-width: 700px; /* Prevent form from stretching too wide */
+    margin: 0 auto; /* Center the form */
+    width: 100%;
+}
+
 /* Payment Card Container */
 .checkout2-payment-card {
     border: 1px solid #e5e7eb;
     border-radius: 8px;
-    padding: 20px;
-    background-color: #ffffff;
+    padding: 24px;
+    background-color: #f9fafb;
 }
 
 /* Radio Button Section */
@@ -406,19 +439,19 @@ body {
     width: 100%; /* Full width container for proper centering */
 }
 
-/* Save Button - Pink background with white text, centered */
+/* Save Button - Pink background with white text, centered and SMALLER */
 .checkout2-btn-save {
-    padding: 14px 50px; /* Comfortable padding for desktop */
+    padding: 10px 32px; /* Reduced padding for smaller button */
     background-color: #ec5569; /* Pink background matching site theme */
     color: #ffffff; /* White text for readability */
     border: none;
     border-radius: 30px; /* Rounded pill-shaped button */
-    font-size: 16px;
+    font-size: 14px; /* Smaller font size */
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease; /* Smooth hover transitions */
     font-family: 'Raleway', sans-serif;
-    min-width: 200px; /* Minimum width for desktop */
+    min-width: 140px; /* Reduced minimum width */
 }
 
 /* Save button hover effect - Darkens and lifts */
@@ -433,19 +466,33 @@ body {
     transform: translateY(0); /* Remove lift on click */
 }
 
+/* ===================================================================
+   BUTTONS SECTION - Separate from payment form
+   ===================================================================
+   Buttons are now in their own section outside the payment form.
+   This provides better visual separation and layout flexibility.
+   =================================================================== */
+
+.checkout2-buttons-section {
+    margin-top: 32px; /* Space above buttons section */
+    padding: 0;
+}
+
 /* Action Buttons Row - Place order and Continue Shopping buttons */
 .checkout2-buttons-row {
     display: flex;
-    gap: 16px;
+    justify-content: space-between; /* One button left, one button right */
+    align-items: center;
     margin-top: 24px;
+    gap: 16px; /* Maintain gap for responsive stacking */
     flex-wrap: wrap;
 }
 
-/* Place Order Button - Primary Pink Button */
+/* Place Order Button - Primary Pink Button (Left-aligned) */
 .checkout2-btn-place {
-    flex: 1;
-    min-width: 140px;
-    padding: 14px 24px;
+    flex: 0 1 auto; /* Don't grow, allow natural width */
+    min-width: 160px;
+    padding: 14px 32px;
     background-color: #ec5569;
     color: #ffffff;
     border: none;
@@ -467,11 +514,11 @@ body {
     transform: translateY(0);
 }
 
-/* Continue Shopping Button - Outlined Button */
+/* Continue Shopping Button - Outlined Button (Right-aligned) */
 .checkout2-btn-continue {
-    flex: 1;
-    min-width: 160px;
-    padding: 14px 24px;
+    flex: 0 1 auto; /* Don't grow, allow natural width */
+    min-width: 180px;
+    padding: 14px 32px;
     background-color: transparent;
     color: #1f2937;
     border: 2px solid #d1d5db;
@@ -496,17 +543,20 @@ body {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
-    padding: 28px;
+    padding: 24px;
     position: sticky;
-    top: 120px; /* Sticky positioning for desktop scrolling */
+    top: 140px; /* Sticky positioning for desktop scrolling */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .checkout2-subtotal-heading {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     color: #1f2937;
-    margin: 0 0 24px 0;
+    margin: 0 0 20px 0;
     text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Subtotal Items List */
@@ -562,11 +612,32 @@ body {
 /* TABLET: 992px and below */
 @media (max-width: 992px) {
     .checkout2-page-wrapper {
-        padding-top: 90px;
+        padding-top: 100px;
     }
 
     .checkout2-progress-section {
         padding: 25px 15px 40px;
+    }
+
+    .checkout2-main-section {
+        padding: 30px 0 70px; /* Maintain full-width approach */
+    }
+
+    .checkout2-billing-header {
+        padding: 0;
+        margin-bottom: 28px;
+    }
+
+    .checkout2-main-heading {
+        font-size: 26px;
+    }
+
+    .checkout2-order-section {
+        padding: 24px;
+    }
+
+    .checkout2-payment-section {
+        padding: 24px;
     }
 
     .checkout2-steps-container {
@@ -590,28 +661,60 @@ body {
         font-size: 14px;
     }
 
-    .checkout2-main-heading {
-        font-size: 24px;
-    }
-
     .checkout2-subtotal-card {
         position: static; /* Remove sticky on tablet */
         margin-top: 30px;
+        margin-bottom: 20px;
     }
 }
 
 /* MOBILE: 768px and below */
 @media (max-width: 768px) {
     .checkout2-page-wrapper {
-        padding-top: 80px;
+        padding-top: 90px;
     }
 
     .checkout2-main-section {
-        padding: 15px 12px 50px;
+        padding: 25px 0 60px; /* Maintain full-width approach */
     }
 
     .checkout2-progress-section {
         padding: 20px 12px 35px;
+    }
+
+    .checkout2-billing-header {
+        padding: 0;
+        margin-bottom: 24px;
+    }
+
+    .checkout2-main-heading {
+        font-size: 24px;
+        padding-bottom: 10px;
+        margin-bottom: 6px;
+    }
+
+    .checkout2-order-section {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .checkout2-section-title {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+    .checkout2-payment-section {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .checkout2-payment-title {
+        font-size: 18px;
+    }
+
+    /* Payment form wrapper - full width on mobile */
+    .checkout2-payment-form-wrapper {
+        max-width: 100%;
     }
 
     .checkout2-step {
@@ -631,30 +734,20 @@ body {
         font-size: 13px;
     }
 
-    .checkout2-main-heading {
-        font-size: 22px;
-        margin-bottom: 20px;
+    .checkout2-subtotal-heading {
+        font-size: 16px;
     }
 
-    .checkout2-order-section {
+    .checkout2-subtotal-card {
+        margin-top: 24px;
         padding: 20px;
     }
 
-    .checkout2-section-title {
-        font-size: 18px;
-    }
-
-    .checkout2-payment-title {
-        font-size: 18px;
-    }
-
-    .checkout2-subtotal-heading {
-        font-size: 18px;
-    }
-
-    /* Stack buttons vertically on mobile */
+    /* Stack buttons vertically on mobile and center them */
     .checkout2-buttons-row {
         flex-direction: column;
+        align-items: stretch; /* Full width buttons */
+        justify-content: center;
     }
 
     .checkout2-btn-place,
@@ -672,6 +765,24 @@ body {
 
 /* SMALL MOBILE: 535px and below */
 @media (max-width: 535px) {
+    .checkout2-billing-header {
+        padding: 0;
+    }
+
+    .checkout2-main-heading {
+        font-size: 20px;
+        padding-bottom: 0;
+        margin-bottom: 18px;
+    }
+
+    .checkout2-order-section {
+        padding: 18px;
+    }
+
+    .checkout2-payment-section {
+        padding: 18px;
+    }
+
     .checkout2-step {
         width: 32px;
         height: 32px;
@@ -717,7 +828,37 @@ body {
     }
 
     .checkout2-main-section {
-        padding: 12px 10px 40px;
+        padding: 20px 0 50px; /* Minimal padding, maintain full-width */
+    }
+
+    .checkout2-billing-header {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .checkout2-main-heading {
+        font-size: 22px;
+        padding-bottom: 8px;
+        margin-bottom: 6px;
+    }
+
+    .checkout2-order-section {
+        padding: 18px;
+        border-radius: 8px;
+    }
+
+    .checkout2-section-title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .checkout2-payment-section {
+        padding: 18px;
+        border-radius: 8px;
+    }
+
+    .checkout2-payment-title {
+        font-size: 18px;
     }
 
     .checkout2-step {
@@ -781,8 +922,12 @@ body {
         font-size: 14px;
     }
 
-    /* Responsive sizing for all buttons on extra small screens */
-    .checkout2-btn-save,
+    /* Responsive sizing for buttons on extra small screens */
+    .checkout2-btn-save {
+        padding: 10px 24px; /* Maintain smaller size */
+        font-size: 14px;
+    }
+
     .checkout2-btn-place,
     .checkout2-btn-continue {
         padding: 12px 20px;

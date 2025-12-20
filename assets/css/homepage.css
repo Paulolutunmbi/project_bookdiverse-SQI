@@ -7,9 +7,51 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-.hero1 span {
+.hero1 p {
     font-size: 48px;
     font-weight:600;
+}
+.hero1 span{
+    color:#f3687f;
+}
+.nav-right {
+    gap: 50px;
+}
+.btn1,.btn2,.btn3,.btn4  {
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    text-decoration: none; 
+    display: inline-block;  
+    text-align : center;
+    align-items: center;
+}
+.btn3,.btn4 {
+    padding: 8px 30px;
+    border-radius: 20px;
+}
+.bun{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.btn1 {
+    background-color: transparent;
+    border: 1.5px solid #f3687f;
+}
+.btn2,.btn3,.btn4{
+    border: none;
+    background-color: #f3687f;
+
+}
+.btn1:hover{
+    background-color: #ff8097;
+}
+.btn2:hover,.btn3:hover,.btn4:hover {
+    background-color: #d95771;
 }
 .card1 {
     position: relative;
@@ -99,13 +141,26 @@ h2 span {
 .bkimg{
     width:100px;
 }
+
+
 @media (max-width: 992px) {
-    .hero1 span {
+    .hero1 p {
     font-size: 38px;
+    }
+    .btn1,.btn2,.btn3,.btn4 {
+    padding: 3px 15px;
+    font-size: 13px;
     }
 }
 
 @media (max-width: 768px) {
+    .btn1,.btn2 {
+    padding: 2px 13px;
+    font-size: 10px;
+    }
+    .nav-text p {
+    font-size: 10px;
+    }
     .hero7 img {
         width: 150px;
     }
@@ -122,15 +177,20 @@ h2 span {
     .card3 h2 {
     font-size: 18px;
         }
-    .hero1 span {
+    .hero1 p {
     font-size: 26px; 
     }
 
 }
 @media (max-width: 535px) {
-    .hero1 span {
+    .btn1,.btn2 {
+    padding: 2px 10px;
+    font-size: 8px;
+    }
+    .hero1 p {
     font-size: 20px;
     }
+    .nav-text p {
+    font-size: 8x;
+    }
 }
-
-

@@ -1,3 +1,37 @@
+.btn1,.btn2 {
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    text-decoration: none; 
+    display: inline-block;  
+    text-align : center;
+    align-items: center;
+}
+
+.btn1 {
+    background-color: transparent;
+    border: 1.5px solid white;
+}
+.btn2{
+    border: none;
+    background-color: #f3687f;
+
+}
+.btn1:hover{
+    background-color: #ff8097;
+}
+.btn2:hover {
+    background-color: #d95771;
+}
+
+.footer-btn {
+    display: flex;
+    gap: 12px;
+}
+
 .footer {
     position: relative;
     width: 100vw;
