@@ -1,0 +1,406 @@
+/* Bookstore Detail Page Styles */
+/* Navbar and footer styles are NOT included here */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F8F8F8;
+}
+
+/* Main Container */
+.bookstore-detail-container {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
+
+/* Bookstore Image */
+.bookstore-image-wrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.bookstore-main-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Bookstore Info Section */
+.bookstore-info {
+    padding: 0;
+}
+
+.bookstore-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.bookstore-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 32px;
+}
+
+/* Detail Sections */
+.detail-section {
+    margin-bottom: 28px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.section-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.view-all-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4A90E2;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.view-all-link:hover {
+    color: #2E5C99;
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+/* Info Cards (Payment & Delivery) */
+.info-card {
+    background-color: #ffffff;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+}
+
+.info-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.info-card-text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.payment-icons,
+.delivery-icons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.payment-icons img,
+.delivery-icons img {
+    height: 28px;
+    width: auto;
+}
+
+/* Review Cards */
+.review-card {
+    background-color: #ffffff;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 18px;
+    height: 100%;
+}
+
+.review-stars {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #FFB800;
+}
+
+.review-date {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.reviewer-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+/* Vendor Buttons */
+.vendor-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-rate-vendor,
+.btn-flag-vendor {
+    padding: 12px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-rate-vendor {
+    background-color: #f3687f;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(243, 104, 127, 0.25);
+}
+
+.btn-rate-vendor:hover {
+    background-color: #D01550;
+    box-shadow: 0 6px 12px rgba(243, 104, 127, 0.35);
+    transform: translateY(-2px);
+}
+
+.btn-flag-vendor {
+    background-color: transparent;
+    color: #f3687f;
+    border: 2px solid #f3687f;
+}
+
+.btn-flag-vendor:hover {
+    background-color: #f3687f;
+    color: #ffffff;
+}
+
+/* Available Books Section */
+.available-books-section {
+    padding: 40px 0;
+}
+
+.book-card {
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.book-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .bookstore-detail-container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .bookstore-title {
+        font-size: 28px;
+    }
+    
+    .bookstore-subtitle {
+        font-size: 15px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .section-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bookstore-detail-container {
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+    
+    .bookstore-title {
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .bookstore-subtitle {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .bookstore-image-wrapper {
+        margin-bottom: 24px;
+    }
+    
+    .section-title {
+        font-size: 17px;
+    }
+    
+    .info-card {
+        padding: 16px;
+    }
+    
+    .payment-icons img,
+    .delivery-icons img {
+        height: 24px;
+    }
+    
+    .vendor-buttons {
+        justify-content: center;
+    }
+    
+    .btn-rate-vendor,
+    .btn-flag-vendor {
+        padding: 10px 28px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bookstore-detail-container {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    
+    .bookstore-title {
+        font-size: 24px;
+    }
+    
+    .bookstore-subtitle {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+    
+    .detail-section {
+        margin-bottom: 20px;
+    }
+    
+    .section-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .section-text {
+        font-size: 12px;
+    }
+    
+    .info-card {
+        padding: 14px;
+        margin-bottom: 12px;
+    }
+    
+    .info-card-title {
+        font-size: 15px;
+    }
+    
+    .info-card-text {
+        font-size: 12px;
+    }
+    
+    .payment-icons,
+    .delivery-icons {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    
+    .payment-icons img,
+    .delivery-icons img {
+        height: 22px;
+    }
+    
+    .review-card {
+        padding: 14px;
+        margin-bottom: 12px;
+    }
+    
+    .review-stars {
+        font-size: 14px;
+    }
+    
+    .review-text {
+        font-size: 12px;
+    }
+    
+    .reviewer-name {
+        font-size: 12px;
+    }
+    
+    .vendor-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .btn-rate-vendor,
+    .btn-flag-vendor {
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .available-books-section {
+        padding: 30px 0;
+    }
+    
+    .book-title {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .bookstore-detail-container {
+        padding-top: 70px;
+    }
+    
+    .bookstore-title {
+        font-size: 22px;
+    }
+    
+    .section-title {
+        font-size: 15px;
+    }
+    
+    .payment-icons img,
+    .delivery-icons img {
+        height: 20px;
+    }
+}
