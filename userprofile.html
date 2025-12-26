@@ -19,14 +19,46 @@
       <img class="searchimg" src="assets/images/shared/frame36013.png" alt="search bar">
     </div>
     <div class="nav-right d-flex">
-      <div class="nav-text d-flex">
-        <a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a>
-        <a href="bookdescription.html" style="text-decoration: none; color: inherit;">Bookstores</a>
-        <p style="margin-bottom: 0;">Help</p>
+      <!-- Desktop: Full navbar (visible on lg+ screens) -->
+      <div class="nav-items-desktop d-none d-lg-flex" style="gap: 150px; align-items: center;">
+        <div class="nav-text d-flex" style="gap: 60px;">
+          <a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a>
+          <a href="bookdescription.html" style="text-decoration: none; color: inherit;">Bookstores</a>
+          <p style="margin-bottom: 0;">Help</p>
+        </div>
+        <img src="assets/images/shared/vector.png" alt="wishlist">
+        <a href="shoppingcart.html" style="text-decoration: none;"><img src="assets/images/shared/vector1.png" alt="shopping-cart"></a>
+        <a href="userprofile.html" style="text-decoration: none;"><img src="assets/images/shared/vector2.png" alt="account"></a>
       </div>
-      <img src="assets/images/shared/vector.png" alt="wishlist">
-      <a href="shoppingcart.html" style="text-decoration: none;"><img src="assets/images/shared/vector1.png" alt="shopping-cart"></a>
-      <a href="userprofile.html" style="text-decoration: none;"><img src="assets/images/shared/vector2.png" alt="account"></a>
+      
+      <!-- Mobile/Tablet: Home link + Hamburger menu (visible below lg) -->
+      <div class="d-flex d-lg-none align-items-center" style="gap: 20px;">
+        <a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-hamburger-toggle">
+        <label for="nav-toggle" class="nav-hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        
+        <div class="nav-dropdown-menu">
+          <a href="bookdescription.html" class="nav-dropdown-item">Bookstores</a>
+          <p class="nav-dropdown-item" style="margin: 0; cursor: pointer;">Help</p>
+          <div class="nav-dropdown-item">
+            <img src="assets/images/shared/vector.png" alt="wishlist">
+            <span>Wishlist</span>
+          </div>
+          <a href="shoppingcart.html" class="nav-dropdown-item">
+            <img src="assets/images/shared/vector1.png" alt="shopping-cart">
+            <span>Shopping Cart</span>
+          </a>
+          <a href="userprofile.html" class="nav-dropdown-item">
+            <img src="assets/images/shared/vector2.png" alt="account">
+            <span>Account</span>
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
 

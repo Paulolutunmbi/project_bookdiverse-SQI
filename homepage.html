@@ -11,24 +11,52 @@
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body style="margin:0; padding:0; overflow-x:hidden;">
-  <nav class="position-absolute top-0 start-0 w-100 z-3 d-flex justify-content-between align-items-center px-5 py-3 text-white">
-    <div class="nav-left d-flex align-items-center gap-5">
-      <a href="index.html" style="text-decoration: none;"><img class="bkimg" src="assets/images/homepagepic/frame35181.png" alt="bookdiverse"></a>
-      <img class="searchimg" src="assets/images/shared/frame36013.png" alt="search bar">
+  <nav class="homepage-nav position-absolute top-0 start-0 w-100 z-3 d-flex justify-content-between align-items-center text-white" style="padding: 20px 50px;">
+    <div class="nav-left d-flex align-items-center" style="gap: 30px;">
+      <a href="index.html" style="text-decoration: none;"><img class="bkimg" src="assets/images/homepagepic/frame35181.png" alt="bookdiverse" style="height: 30px; width: auto;"></a>
+      <img class="searchimg" src="assets/images/shared/frame36013.png" alt="search bar" style="height: 35px; width: auto;">
     </div>
     <div class="nav-right d-flex">
-      <div class="nav-text d-flex">
-        <a href="bookdescription.html" style="text-decoration: none; color: inherit;">Bookstores</a>
-        <p style="margin-bottom: 0;">Help</p>
+      <!-- Desktop: Full navbar (visible on lg+ screens) -->
+      <div class="nav-items-desktop d-none d-lg-flex align-items-center" style="gap: 50px;">
+        <a href="bookdescription.html" style="text-decoration: none; color: white; font-size: 14px; font-weight: 400;">Bookstores</a>
+        <p style="margin-bottom: 0; font-size: 14px; font-weight: 400; cursor: pointer;">Help</p>
+        <img src="assets/images/homepagepic/love-svgrepo-com1.png" alt="wishlist" style="width: 22px; height: 22px; cursor: pointer;">
+        <a href="shoppingcart.html" style="text-decoration: none;"><img src="assets/images/homepagepic/material-symbols_shopping-cart.png" alt="shopping-cart" style="width: 22px; height: 22px;"></a>
+        <a href="userprofile.html" style="text-decoration: none;"><img src="assets/images/homepagepic/mdi_account-outline.png" alt="account" style="width: 22px; height: 22px;"></a>
       </div>
-      <img src="assets/images/homepagepic/love-svgrepo-com1.png" alt="wishlist">
-      <a href="shoppingcart.html" style="text-decoration: none;"><img src="assets/images/homepagepic/material-symbols_shopping-cart.png" alt="shopping-cart"></a>
-      <a href="userprofile.html" style="text-decoration: none;"><img src="assets/images/homepagepic/mdi_account-outline.png" alt="account"></a>
+      
+      <!-- Mobile/Tablet: Hamburger menu only (visible below lg) -->
+      <div class="d-flex d-lg-none align-items-center">
+        <input type="checkbox" id="nav-toggle" class="nav-hamburger-toggle">
+        <label for="nav-toggle" class="nav-hamburger-icon">
+          <span style="background-color: white;"></span>
+          <span style="background-color: white;"></span>
+          <span style="background-color: white;"></span>
+        </label>
+        
+        <div class="nav-dropdown-menu">
+          <a href="bookdescription.html" class="nav-dropdown-item">Bookstores</a>
+          <p class="nav-dropdown-item" style="margin: 0; cursor: pointer;">Help</p>
+          <div class="nav-dropdown-item">
+            <img src="assets/images/homepagepic/love-svgrepo-com1.png" alt="wishlist">
+            <span>Wishlist</span>
+          </div>
+          <a href="shoppingcart.html" class="nav-dropdown-item">
+            <img src="assets/images/homepagepic/material-symbols_shopping-cart.png" alt="shopping-cart">
+            <span>Shopping Cart</span>
+          </a>
+          <a href="userprofile.html" class="nav-dropdown-item">
+            <img src="assets/images/homepagepic/mdi_account-outline.png" alt="account">
+            <span>Account</span>
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
-  <div class="hero1 " style="width:100%; height:auto; overflow:hidden; position:relative;">
-    <img src="assets/images/homepagepic/image27.png" style="width:100%; height:100%; object-fit:cover; display:block; " alt="Main Image">
-    <span style="justify-content:center; color:white;  font-weight:600;position:absolute; top:50%; left:0; right:0; text-align:center;   transform:translateY(-50%);">Shop At Your Convenience - Anytime, Anywhere</span>
+  <div class="hero1" style="width:100%; height:455px; overflow:hidden; position:relative;">
+    <img src="assets/images/homepagepic/image27.png" style="width:100%; height:100%; object-fit:cover; display:block;" alt="Main Image">
+    <h1 class="hero1-text" style="color:white; font-weight:600; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-align:center; width:90%; max-width:900px; font-size:46px; line-height:1.3; margin:0; letter-spacing: 0.5px;">Shop At Your Convenience - Anytime, Anywhere</h1>
   </div>
   <h2 class="text-center fw-bold mt-5 ">Browse by Category</h2>
 

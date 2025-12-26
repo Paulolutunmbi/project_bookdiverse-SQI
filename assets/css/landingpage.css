@@ -7,6 +7,22 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+/* Hero1 section */
+.hero1 {
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero1-content h1 {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.hero1-content p {
+    line-height: 1.6;
+}
+
 .hero1 p {
     font-size: 48px;
     font-weight:600;
