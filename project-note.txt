@@ -1,0 +1,3 @@
+All files in this folder belong to the same frontend demo project.
+Shared CSS files are reused across pages.
+Changes must be consistent.
