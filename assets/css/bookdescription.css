@@ -7,7 +7,7 @@
 .hero1-text p{ line-height:1.5; }
 
 /* Continue button border color — line 67 requested color */
-.btn-continue{ border-color: #ff4da6 !important; }
+.btn-continue{ border-color: #f06d82 !important; }
 
 @media (max-width: 767.98px){
   .hero1{ padding: 1rem; margin: 0.25rem; }
@@ -17,8 +17,8 @@
 
 /* Button hover color and sizing */
 .buttons .btn{ transition: all 0.15s ease-in-out; }
-.buttons .btn:hover{ color: #fff; border-color: #ff4da6 !important; background-color: #ff4da6 !important; }
-.btn-continue{ border-color: #ff4da6 !important; font-size: 1.05rem; padding-left: 1.25rem; padding-right: 1.25rem; }
+.buttons .btn:hover{ color: #fff; border-color: #f06d82 !important; background-color: #f06d82 !important; }
+.btn-continue{ border-color: #f06d82 !important; font-size: 1.05rem; padding-left: 1.25rem; padding-right: 1.25rem; }
 .btn-continue:hover{ transform: translateY(-2px); }
 
 /* Related books styling */
@@ -131,17 +131,17 @@
 .continue-btn{
   background:#fff !important;
   color:#111 !important;
-  border:2px solid #ff4da6 !important;
+  border:2px solid #f06d82 !important;
   border-radius:12px !important;
   padding:0.6rem 1.5rem !important;
   box-shadow: 0 2px 0 rgba(0,0,0,0.03);
 }
-.continue-btn:hover{ background:#ff4da6 !important; color:#fff !important; }
+.continue-btn:hover{ background:#f06d82 !important; color:#fff !important; }
 
 .proceed-btn{
-  background:#ff4da6 !important;
+  background:#f06d82 !important;
   color:#fff !important;
-  border:2px solid #ff4da6 !important;
+  border:2px solid #f06d82 !important;
   border-radius:12px !important;
   padding:0.6rem 1.8rem !important;
   box-shadow: 0 6px 18px rgba(255,77,166,0.14);
