@@ -26,7 +26,7 @@ nav {
 }
 
 .searchimg {
-    height: 32px;
+    height: 44px;
     width: auto;
     cursor: pointer;
 }
@@ -61,7 +61,7 @@ nav {
     display: block;
     width: 24px;
     height: 2.5px;
-    background-color: white;
+    background-color: currentColor; /* Inherits text color from parent */
     transition: all 0.3s ease;
     border-radius: 1px;
 }
@@ -159,7 +159,7 @@ nav {
     }
     
     .searchimg {
-        height: 20px;
+        height: 28px;
     }
 }
 
@@ -174,7 +174,7 @@ nav {
     }
     
     .searchimg {
-        height: 18px;
+        height: 25px;
     }
     
     .btn1, .btn2 {
@@ -198,7 +198,7 @@ nav {
     }
     
     .searchimg {
-        height: 16px;
+        height: 22px;
     }
     
     .nav-hamburger-icon span {
